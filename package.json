@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "4.16.4",
+    "express": "^4.16.4",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -15,13 +15,12 @@
     "redux-thunk": "^2.3.0",
     "yarn": "^1.22.10"
   },
-  "engines": {
-    "node": "14.15.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "server": "json-server public/db.json --port 8000",
     "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
