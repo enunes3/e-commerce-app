@@ -28,13 +28,12 @@ class Basket extends Component {
                 <li key={item.id}>
                   <b>{item.title}</b>
                   <button
-                    style={{ float: "right" }}
-                    className="btn btn-danger btn-xs"
-                    onClick={(e) =>
-                      this.props.removeFromCart(this.props.cartItems, item)
-                    }
-                  >
-                    X
+                      style={{ float: "right" }}
+                      className="btn btn-danger btn-xs"
+                        onClick={(e) =>
+                          this.props.removeFromCart(this.props.cartItems, item)
+                        }
+                    > X 
                   </button>
                   <br />
               {/* # of items multiplied with the amount of the price */}
@@ -43,7 +42,8 @@ class Basket extends Component {
               ))}
             </ul>
               
-              {/* adding a reduce method of an array (cartItem, current item and it will be returning the total amount) */}
+              {/* adding a reduce method of an array (cartItem, current item and it will be returning the total amount, default value for the accumulator is 0) */}
+              {/*- located in util.js */}
             <b>
               Total:{" "}
               {util.formatCurrency(

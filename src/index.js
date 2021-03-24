@@ -1,7 +1,7 @@
-<<<<<<< Updated upstream
-=======
+// <<<<<<< Updated upstream
+// =======
 
->>>>>>> Stashed changes
+// >>>>>>> Stashed changes
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

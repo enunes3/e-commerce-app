@@ -19,11 +19,11 @@ class Filter extends Component {
             Order by
             <select
               className="form-control"
-              value={this.props.sort}
-              onChange={(event) => {
-                this.props.sortProducts(
-                  this.props.filteredProducts,
-                  event.target.value
+                value={this.props.sort}
+                onChange={(event) => {
+                    this.props.sortProducts(
+                      this.props.filteredProducts,
+                      event.target.value
                 );
               }}
             >
@@ -41,11 +41,11 @@ class Filter extends Component {
             Filter Size
             <select
               className="form-control"
-              value={this.props.size}
-              onChange={(event) => {
-                this.props.filterProducts(
-                  this.props.products,
-                  event.target.value
+                value={this.props.size}
+                onChange={(event) => {
+                    this.props.filterProducts(
+                      this.props.products,
+                      event.target.value
                 );
               }}
             >
